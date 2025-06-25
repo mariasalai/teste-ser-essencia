@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Heart, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -85,27 +86,6 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Banner Section */}
-      <section className="py-0">
-        <div className="w-full">
-          <div className="bg-gradient-to-r from-[#6b8e23] to-[#a1bd65] text-white py-12 px-4">
-            <div className="container mx-auto text-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Espaço para Banner Promocional
-              </h3>
-              <p className="text-lg opacity-90 mb-6">
-                Aqui você pode adicionar promoções, lançamentos ou mensagens especiais
-              </p>
-              <div className="bg-white/20 rounded-lg p-8 max-w-4xl mx-auto">
-                <p className="text-sm opacity-75">
-                  Este é um espaço reservado para banner. Substitua este conteúdo pelo seu banner personalizado.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
