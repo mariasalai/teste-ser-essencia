@@ -24,7 +24,7 @@ const Cart = ({ items, onUpdateQuantity, onRemoveItem }: CartProps) => {
   };
 
   const sendToWhatsApp = () => {
-    const phoneNumber = "5547993825877"; // Seu número do WhatsApp
+    const phoneNumber = "554799382587"; // Seu número do WhatsApp
     let message = "Olá! Tenho interesse em:\n\n";
     
     items.forEach(item => {

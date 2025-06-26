@@ -28,28 +28,31 @@ const Catalog = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Escalda Pés Relaxante",
-      price: 25.90,
-      description: "Escalda pés com ervas naturais para relaxamento profundo",
-      benefits: "Alívio do estresse, melhora da circulação, relaxamento muscular",
+      name: "Escalda Pés Relaxar 200g",
+      price: 26.90,
+      description: "Um momento só seu, para colocar os pés na água quente e deixar o mundo lá fora. Feito com ervas naturais alivia tensões, acalma a mente e promove um descanso profundo do corpo e da alma. Rende 4 usos.",
+      ingredients: "Sal grosso Rosa do Himalaia, Sal grosso branco, Lavanda, Camomila, Hibisco e Óleo essencial de Lavanda", 
+      benefits: "Alívio do cansaço físico e mental, relaxamento muscular e melhora da circulação sanguínea",
       category: "escalda-pes",
       image: "/api/placeholder/300/300"
     },
     {
       id: 2,
-      name: "Escalda Pés Energizante",
-      price: 28.90,
-      description: "Escalda pés revigorante com óleos essenciais",
-      benefits: "Energia renovada, vitalidade, sensação de bem-estar",
+      name: "Escalda Pés Relaxar 50g",
+      price: 8.50,
+      description: "Um momento só seu, para colocar os pés na água quente e deixar o mundo lá fora. Feito com ervas naturais alivia tensões, acalma a mente e promove um descanso profundo do corpo e da alma.",
+      ingredients: "Sal grosso Rosa do Himalaia, Sal grosso branco, Lavanda, Camomila, Hibisco e Óleo essencial de Lavanda", 
+      benefits: "Alívio do cansaço físico e mental, relaxamento muscular e melhora da circulação sanguínea",
       category: "escalda-pes",
       image: "/api/placeholder/300/300"
     },
     {
       id: 3,
-      name: "Spray Terapêutico Lavanda",
-      price: 35.90,
+      name: "Spray Terapêutico Acalmar 30ml",
+      price: 22.90,
       description: "Spray calmante com óleo essencial de lavanda",
       benefits: "Relaxamento, alívio da ansiedade, melhor qualidade do sono",
+      ingredients: "", 
       category: "spray-terapeutico",
       image: "/api/placeholder/300/300"
     },
@@ -59,6 +62,7 @@ const Catalog = () => {
       price: 37.90,
       description: "Spray descongestionante com eucalipto puro",
       benefits: "Alívio respiratório, descongestionamento, frescor",
+      ingredients: "", 
       category: "spray-terapeutico",
       image: "/api/placeholder/300/300"
     },
@@ -68,6 +72,7 @@ const Catalog = () => {
       price: 22.90,
       description: "Roll-on natural para alívio de dores de cabeça",
       benefits: "Alívio rápido, praticidade, ingredientes naturais",
+      ingredients: "", 
       category: "roll-on",
       image: "/api/placeholder/300/300"
     },
@@ -77,6 +82,7 @@ const Catalog = () => {
       price: 24.90,
       description: "Roll-on calmante para momentos de ansiedade",
       benefits: "Tranquilidade, equilíbrio emocional, praticidade",
+      ingredients: "", 
       category: "roll-on",
       image: "/api/placeholder/300/300"
     },
@@ -86,6 +92,7 @@ const Catalog = () => {
       price: 15.90,
       description: "Kit especial com mini produtos para presentear",
       benefits: "Presente perfeito, variedade de produtos, preço acessível",
+      ingredients: "", 
       category: "lembrancinhas",
       image: "/api/placeholder/300/300"
     },
@@ -95,6 +102,7 @@ const Catalog = () => {
       price: 8.90,
       description: "Sachê perfumado para gavetas e armários",
       benefits: "Aroma duradouro, organização, frescor",
+      ingredients: "", 
       category: "lembrancinhas",
       image: "/api/placeholder/300/300"
     }
@@ -105,7 +113,7 @@ const Catalog = () => {
     { id: 'escalda-pes', name: 'Escalda Pés' },
     { id: 'spray-terapeutico', name: 'Spray Terapêutico' },
     { id: 'roll-on', name: 'Roll-on Terapêutico' },
-    { id: 'lembrancinhas', name: 'Lembrancinhas' }
+    { id: 'personalizados', name: 'Personalizados' }
   ];
 
   const filteredProducts = products.filter(product => {
@@ -188,7 +196,7 @@ const Catalog = () => {
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader>
-                    <SheetTitle>Seu Carrinho</SheetTitle>
+                    <SheetTitle>Seu carrinho</SheetTitle>
                   </SheetHeader>
                   <Cart
                     items={cartItems}
@@ -218,7 +226,7 @@ const Catalog = () => {
           <div className="flex-1">
             <div className="mb-6">
               <h2 className="text-2xl font-semibold text-[#605d0f] mb-2">
-                Produtos Naturais para seu Bem-Estar
+                Produtos naturais focados no seu bem-estar
               </h2>
               <p className="text-gray-600">
                 Descubra nossa linha completa de produtos naturais e terapêuticos

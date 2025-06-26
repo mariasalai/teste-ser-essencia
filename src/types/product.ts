@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   description: string;
   benefits: string;
+  ingredients: string;
   category: string;
   image: string;
 }
