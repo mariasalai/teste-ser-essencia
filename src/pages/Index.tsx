@@ -19,10 +19,11 @@ const Index = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Escalda Pés Relaxante",
-      price: 25.90,
-      description: "Escalda pés com ervas naturais para relaxamento profundo",
-      benefits: "Alívio do estresse, melhora da circulação, relaxamento muscular",
+      name: "Escalda Pés Relaxar 200g",
+      price: 26.90,
+      description: "Um momento só seu, para colocar os pés na água quente e deixar o mundo lá fora. Feito com lavanda, camomila, hibiscos e sal rosa do Himalaia, alivia tensões, acalma a mente e promove um descanso profundo do corpo e da alma.",
+      ingredients: "", 
+      benefits: "Alívio do cansaço físico e mental, relaxamento muscular e melhora da circulação sanguínea",
       category: "escalda-pes",
       image: "/api/placeholder/300/300"
     },
@@ -32,6 +33,7 @@ const Index = () => {
       price: 28.90,
       description: "Escalda pés revigorante com óleos essenciais",
       benefits: "Energia renovada, vitalidade, sensação de bem-estar",
+      ingredients: "", 
       category: "escalda-pes",
       image: "/api/placeholder/300/300"
     },
@@ -41,6 +43,7 @@ const Index = () => {
       price: 35.90,
       description: "Spray calmante com óleo essencial de lavanda",
       benefits: "Relaxamento, alívio da ansiedade, melhor qualidade do sono",
+      ingredients: "", 
       category: "spray-terapeutico",
       image: "/api/placeholder/300/300"
     },
@@ -50,6 +53,7 @@ const Index = () => {
       price: 37.90,
       description: "Spray descongestionante com eucalipto puro",
       benefits: "Alívio respiratório, descongestionamento, frescor",
+      ingredients: "", 
       category: "spray-terapeutico",
       image: "/api/placeholder/300/300"
     },
@@ -59,6 +63,7 @@ const Index = () => {
       price: 22.90,
       description: "Roll-on natural para alívio de dores de cabeça",
       benefits: "Alívio rápido, praticidade, ingredientes naturais",
+      ingredients: "", 
       category: "roll-on",
       image: "/api/placeholder/300/300"
     },
@@ -68,6 +73,7 @@ const Index = () => {
       price: 24.90,
       description: "Roll-on calmante para momentos de ansiedade",
       benefits: "Tranquilidade, equilíbrio emocional, praticidade",
+      ingredients: "", 
       category: "roll-on",
       image: "/api/placeholder/300/300"
     },
@@ -77,6 +83,7 @@ const Index = () => {
       price: 15.90,
       description: "Kit especial com mini produtos para presentear",
       benefits: "Presente perfeito, variedade de produtos, preço acessível",
+      ingredients: "", 
       category: "lembrancinhas",
       image: "/api/placeholder/300/300"
     },
@@ -86,6 +93,7 @@ const Index = () => {
       price: 8.90,
       description: "Sachê perfumado para gavetas e armários",
       benefits: "Aroma duradouro, organização, frescor",
+      ingredients: "", 
       category: "lembrancinhas",
       image: "/api/placeholder/300/300"
     }
@@ -169,7 +177,7 @@ const Index = () => {
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader>
-                    <SheetTitle>Seu Carrinho</SheetTitle>
+                    <SheetTitle>Seu carrinho</SheetTitle>
                   </SheetHeader>
                   <Cart
                     items={cartItems}

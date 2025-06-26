@@ -25,7 +25,7 @@ const ProductModal = ({ product, isOpen, onClose, onAddToCart }: ProductModalPro
       'escalda-pes': 'Escalda Pés',
       'spray-terapeutico': 'Spray Terapêutico',
       'roll-on': 'Roll-on',
-      'lembrancinhas': 'Lembrancinhas'
+      'personalizados': 'personalizados'
     };
     return names[category as keyof typeof names] || category;
   };
@@ -66,6 +66,13 @@ const ProductModal = ({ product, isOpen, onClose, onAddToCart }: ProductModalPro
           </div>
           
           <Separator />
+
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-2">Ingredientes</h4>
+            <p className="text-gray-600">{product.ingredients}</p>
+          </div>
+          
+          <Separator />
           
           <div className="flex items-center justify-between">
             <div className="text-3xl font-bold text-[#6b8e23]">
@@ -75,7 +82,7 @@ const ProductModal = ({ product, isOpen, onClose, onAddToCart }: ProductModalPro
               onClick={handleAddToCart}
               className="bg-[#6b8e23] hover:bg-[#5a7a1e]"
             >
-              Adicionar ao Carrinho
+              Adicionar ao carrinho
             </Button>
           </div>
         </div>
